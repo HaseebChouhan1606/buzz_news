@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My News - Latest Pakistan News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Nastaliq+Urdu:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://media.gettyimages.com/id/1494607749/photo/sunset-scene-landscape-of-hunza-valley-with-river-and-karakoram-range-mountain-hunza-valley.jpg?s=612x612&w=gi&k=20&c=CRfRnedNbU401cGDXuXlXYizyoHBaIAu5Swiv9mb_Hc=');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.4rem;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 1300px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 30px;
+        }
+        .news-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .news-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+        .news-content {
+            padding: 20px;
+        }
+        .news-content h2 {
+            font-size: 1.5rem;
+            margin: 0 0 10px 0;
+            color: #c62828;
+        }
+        .news-date {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .news-content p {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        .read-more {
+            display: inline-block;
+            background: #c62828;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .read-more:hover {
+            background: #b71c1c;
+        }
+        .urdu-text {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            direction: rtl;
+            text-align: right;
+        }
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            .news-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BUZZ News</h1>
+        <p>Latest Updates from Pakistan - Breaking News 24/7</p>
+    </header>
+
+    <div class="container">
+        <div class="news-grid">
+
+            <!-- News 1 -->
+            <div class="news-card">
+                <img src="https://www.aljazeera.com/wp-content/uploads/2024/02/2024-02-13T092136Z_353827633_RC2XY5A0V6TQ_RTRMADP_3_PAKISTAN-ELECTION-DISAPPOINTMENT-1708460174.jpg?resize=1920%2C1080" alt="PPP Election" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>PPP Emerges as Largest Party in General Elections 2023</h2>
+                    <p>By Our Correspondent, Lahore: The Pakistan Peoples Party (PPP) has emerged as the leading party in the General Elections 2023, securing 135 seats in the National Assembly. PML-N won 85 seats while Pakistan Tehreek-e-Insaf...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- News 2 -->
+            <div class="news-card">
+                <img src="https://d2ksr9467jthww.cloudfront.net/2024100620100/6702ecdd023d1607c425d999jpeg.jpg" alt="Karachi Blast" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>Deadly Blast Near NIPA Chowrangi Claims Six Lives in Karachi</h2>
+                    <p>Karachi was rocked by a deadly bomb explosion early Sunday morning near NIPA Chowrangi, leaving at least six people dead and 10 others injured. The explosive device was planted on a motorcycle...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- News 3 -->
+            <div class="news-card">
+                <img src="https://i.dawn.com/large/2025/12/2618492762a0262.webp" alt="UAE President Visit" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>Pakistan Extends Warm Welcome to UAE President Sheikh Mohammed bin Zayed</h2>
+                    <p>Pakistan today welcomed UAE President Sheikh Mohammed bin Zayed Al Nahyan on a one-day official visit with full ceremonial honors. The visit aims to strengthen bilateral ties...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- News 4 -->
+            <div class="news-card">
+                <img src="https://minhaj.net/images-db10/2021/Dr-Tahir-ul-Qadri-condoles-with-Birg-Iqbal-Ahmad-over-his-wife-death_2021-10-17_1.jpg" alt="Funeral" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">July 10, 2019</div>
+                    <h2>Col (R) Syed Tayyab Ahmed Passes Away in Karachi</h2>
+                    <p>By our correspondent, Karachi: Col (R) Syed Tayyab Ahmed passed away yesterday. His funeral prayers will be held today at 1:30 PM after Zohar at Askari 3 Mosque, Karachi Cantt.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- News 5 -->
+            <div class="news-card">
+                <img src="https://i.dawn.com/primary/2025/11/272152267e7fc8c.webp" alt="Pakistan vs Sri Lanka Cricket" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>Pakistan Beat Sri Lanka by 20 Runs in First T20 at National Stadium Karachi</h2>
+                    <p>By our correspondent, Karachi: Pakistan defeated Sri Lanka by 20 runs on Monday in the first T20 match at National Stadium Karachi. Pakistan scored 100 runs in 80 balls...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- News 6 (Urdu one) -->
+            <div class="news-card">
+                <img src="https://c.ndtvimg.com/2025-12/5skiugl4_mohsin-naqvi-afp_625x300_23_December_25.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738" alt="Mohsin Naqvi" class="news-image">
+                <div class="news-content urdu-text">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>محسن نقوی: پاکستان بھارت کے ساتھ کرکٹ کھیلنے کے لیے تیار، کرکٹ کو سیاست سے الگ رکھنے کی ضرورت</h2>
+                    <p>کراچی میں پی سی بی کے چیئرمین محسن نقوی نے کہا کہ پاکستان دنیا کے کسی بھی حصے میں بھارت کے ساتھ کرکٹ کھیلنے کے لیے تیار ہے۔ کراچی ایئرپورٹ پر صحافیوں سے گفتگو کرتے ہوئے انہوں نے یہ بھی کہا کہ کرکٹ کو سیاست سے الگ رکھنا چاہیے، کیونکہ یہ لوگوں کے ملنے جلنے کا بہترین ذریعہ ہے۔</p>
+                    <a href="#" class="read-more">مزید پڑھیں</a>
+                </div>
+            </div>
+
+            <!-- News 7 -->
+            <div class="news-card">
+                <img src="https://i.dawn.com/primary/2019/12/5df045a8e8711.jpg" alt="Rain Forecast" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>PMD Forecasts Rain in Parts of Country</h2>
+                    <p>The Pakistan Meteorological Department has predicted rainfall in various regions, including Lahore and Karachi. Rain may help reduce smog and pollution significantly...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- News 8 -->
+            <div class="news-card">
+                <img src="https://en.dailypakistan.com.pk/wp-content/uploads/2025/12/four-indian-backed-terrorists-killed-in-balochistan-operation-ispr-news-307721.jpeg" alt="Balochistan Operation" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>Four Terrorists Killed in Balochistan Operation Targeting Fitna-e-Hindustan</h2>
+                    <p>Security forces eliminated four militants linked to Fitna-e-Hindustan in Kalat, Balochistan. Weapons and explosives were recovered...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- News 9 -->
+            <div class="news-card">
+                <img src="https://i.dawn.com/large/2025/12/2812334599cdb57.webp" alt="Adil Raja" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>YouTuber Adil Raja Declared Proscribed Person Under Anti-Terrorism Act</h2>
+                    <p>The federal cabinet has listed YouTuber and former army officer Adil Farooq Raja as a banned individual under the Anti-Terrorism Act 1997...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- News 10 -->
+            <div class="news-card">
+                <img src="https://i.ytimg.com/vi/zRpP3lr1rIc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDB9SPW676fJs4slAmdSQrVvFW6IA" alt="Ahsan Iqbal" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>Ahsan Iqbal Clarifies Disruption During Live Interview</h2>
+                    <p>Planning Minister Ahsan Iqbal described the interview disruption as a domestic issue and highlighted strengthening Pakistan-UAE ties and defense capabilities...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="https://i.dawn.com/medium/2025/08/0817575255a67f5.jpg?r=175937" alt="Security Operation" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>Security Forces Eliminate Multiple Terrorists in Recent Operations Across Country</h2>
+                    <p>In ongoing counter-terrorism efforts, security forces have neutralized several militants in operations in Balochistan and Khyber Pakhtunkhwa. Recent actions include the killing of terrorists linked to banned outfits, with weapons and explosives recovered...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- New News 12 -->
+            <div class="news-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuY0Hkac9kHWfDo5V57J_i2rwbTJ1RaYcXEQ&s" alt="Gold Price Record" class="news-image">
+                <div class="news-content">
+                    <div class="news-date">December 29, 2025</div>
+                    <h2>Gold Prices Hit Record High in Pakistan, Reach Rs475,000 Per Tola</h2>
+                    <p>Gold prices in Pakistan continued their upward surge, reaching a new all-time high of Rs475,000 per tola amid rising international rates and economic uncertainty. The increase of over Rs2,000 in a single day has impacted jewelry buyers and investors...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My News - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
